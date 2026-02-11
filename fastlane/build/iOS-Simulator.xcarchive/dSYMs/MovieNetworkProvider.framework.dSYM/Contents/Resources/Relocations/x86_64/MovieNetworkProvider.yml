@@ -1,6 +1,6 @@
 ---
 triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/tomaszogrodowski/Library/Developer/Xcode/DerivedData/MovieWorkspace-gdsjfairhbhmpfdinqtzlawfgmja/Build/Intermediates.noindex/ArchiveIntermediates/MovieNetworkProvider/InstallationBuildProductsLocation/Library/Frameworks/MovieNetworkProvider.framework/MovieNetworkProvider'
+binary-path:     '/Users/tomaszogrodowski/Library/Developer/Xcode/DerivedData/MovieWorkspace-dbbjgtfglheowegnuywvztbyvxok/Build/Intermediates.noindex/ArchiveIntermediates/MovieNetworkProvider/InstallationBuildProductsLocation/Library/Frameworks/MovieNetworkProvider.framework/MovieNetworkProvider'
 relocations:
   - { offset: 0x2AB5D, size: 0x8, addend: 0x0, symName: _MovieNetworkProviderVersionString, symObjAddr: 0x0, symBinAddr: 0x5AA0, symSize: 0x0 }
   - { offset: 0x2AB94, size: 0x8, addend: 0x0, symName: _MovieNetworkProviderVersionNumber, symObjAddr: 0x48, symBinAddr: 0x5AE8, symSize: 0x0 }

@@ -1889,98 +1889,98 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Managers\/MovieNetworkManager.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Managers\/MovieNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 7,
       "value": "\"en-US\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Managers\/MovieNetworkManager.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Managers\/MovieNetworkManager.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 13,
       "value": "\"total_pages\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 15,
       "value": "\"total_results\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 854,
       "length": 15,
       "value": "\"backdrop_path\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 894,
       "length": 11,
       "value": "\"genre_ids\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 954,
       "length": 19,
       "value": "\"original_language\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 1003,
       "length": 16,
       "value": "\"original_title\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 1080,
       "length": 13,
       "value": "\"poster_path\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 14,
       "value": "\"release_date\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 1189,
       "length": 14,
       "value": "\"vote_average\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Models\/MovieModel.swift",
       "kind": "StringLiteral",
       "offset": 1229,
       "length": 12,
       "value": "\"vote_count\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Utilities\/AppKey.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Utilities\/AppKey.swift",
       "kind": "StringLiteral",
       "offset": 41,
       "length": 246,
       "value": "\"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYzc2YmQxZDEyM2E5NTdlZjFhZDUwMTc0M2RkMDFlYiIsIm5iZiI6MTY1NTI4MDM5NC4zOTkwMDAyLCJzdWIiOiI2MmE5OTMwYTIyYWYzZTUyMTQxZGU1MTEiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.CrgZg7vC9jfoSDBT6oJYDjX5iDnzi4tKAqbRxnNoPzk\""
     },
     {
-      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/MovieNetworkProvider.swift",
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/MovieNetworkProvider.swift",
       "kind": "StringLiteral",
       "offset": 43,
       "length": 23,
