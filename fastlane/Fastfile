@@ -1,103 +1,124 @@
 default_platform(:ios)
 
+# ========================
+# GLOBAL VARIABLES
+# ========================
+FRAMEWORK_NAME = "MovieNetworkProvider"
+TEST_SCHEME_NAME = "MovieNetworkProviderTests"
+WORKSPACE_PATH = File.expand_path("../MovieWorkspace/MovieWorkspace.xcworkspace", __dir__)
+BUILD_DIR = "build"
+ARTIFACTS_DIR = "artifacts/xcframeworks"
+XCFRAMEWORK_SOURCE = "#{ARTIFACTS_DIR}/#{FRAMEWORK_NAME}.xcframework"
+WRAPPER_REPO_PATH = File.expand_path("../MovieNetworkDataProviderSPM", __dir__)
+WRAPPER_BINARIES_PATH = "#{WRAPPER_REPO_PATH}/Binaries"
+XCFRAMEWORK_DESTINATION = "#{WRAPPER_BINARIES_PATH}/#{FRAMEWORK_NAME}.xcframework"
+TEST_RESULT_PATH = "#{BUILD_DIR}/Tests.xcresult"
+
 platform :ios do
+
+  desc "Run unit tests and print code coverage"
+  lane :run_tests do
+
+    # Clean previous test results
+    sh("rm -rf #{TEST_RESULT_PATH}")
+    sh("mkdir -p #{BUILD_DIR}")
+
+    puts "Running unit tests for #{FRAMEWORK_NAME}..."
+    sh("xcodebuild test \
+      -workspace #{WORKSPACE_PATH} \
+      -scheme #{TEST_SCHEME_NAME} \
+      -destination 'platform=iOS Simulator,name=iPhone 17' \
+      -enableCodeCoverage YES \
+      -resultBundlePath #{TEST_RESULT_PATH}")
+
+    # Print Code Coverage
+    require 'json'
+    xccov_output = `xcrun xccov view --report --json #{TEST_RESULT_PATH}`
+    coverage_json = JSON.parse(xccov_output)
+    target_coverages = coverage_json["targets"].map { |t| t["lineCoverage"] }
+    average_coverage = target_coverages.sum / target_coverages.size
+    puts "Code Coverage summary:"
+coverage_json["targets"].each do |t|
+  puts "  #{t['name']}: #{(t['lineCoverage'] * 100).round(2)}%"
+end
+puts "Average Code Coverage: #{(average_coverage * 100).round(2)}%"  end
 
   desc "Build SDK, copy to wrapper repo, commit and push"
   lane :release_sdk do
 
-    framework_name = "MovieNetworkProvider"
-    workspace = File.expand_path("../MovieWorkspace/MovieWorkspace.xcworkspace", __dir__)
-
-
-    build_dir = "build"
-    artifacts_dir = "artifacts/xcframeworks"
-    xcframework_source = "#{artifacts_dir}/#{framework_name}.xcframework"
-
-    wrapper_repo_path = File.expand_path("../MovieNetworkDataProviderSPM", __dir__)
-    wrapper_binaries_path = "#{wrapper_repo_path}/Binaries"
-    xcframework_destination = "#{wrapper_binaries_path}/#{framework_name}.xcframework"
-
     # ========================
     # 1. CLEAN
     # ========================
+    sh("rm -rf #{BUILD_DIR}")
+    sh("rm -rf #{XCFRAMEWORK_SOURCE}")
+    sh("mkdir -p #{ARTIFACTS_DIR}")
 
-    sh("rm -rf #{build_dir}")
-    sh("rm -rf #{xcframework_source}")
-    sh("mkdir -p #{artifacts_dir}")
+    # ========================
+    # 1b. CHECKOUT SUBMODULES NA MAIN
+    # ========================
+    Dir.chdir(File.expand_path("../MovieWorkspace", __dir__)) do
+      sh("git fetch origin")
+      sh("git checkout main")
+      sh("git pull origin main")
+    end
 
-# ========================
-# 1b. CHECKOUT SUBMODULES NA MAIN
-# ========================
-Dir.chdir(File.expand_path("../MovieWorkspace", __dir__)) do
-  sh("git fetch origin")
-  sh("git checkout main")
-  sh("git pull origin main")
-end
+    Dir.chdir(File.expand_path("../MovieNetworkDataProviderSPM", __dir__)) do
+      sh("git fetch origin")
+      sh("git checkout main")
+      sh("git pull origin main")
+    end
 
-Dir.chdir(File.expand_path("../MovieNetworkDataProviderSPM", __dir__)) do
-  sh("git fetch origin")
-  sh("git checkout main")
-  sh("git pull origin main")
-end
+    # ========================
+    # 1c. RUN UNIT TESTS
+    # ========================
+    run_tests
 
     # ========================
     # 2. ARCHIVE DEVICE
     # ========================
-
-puts "🛠 Fastlane working directory: #{Dir.pwd}"
-  puts "🛠 Using workspace path: #{File.expand_path(workspace)}"
-
-  sh("echo Fastlane cwd: #{Dir.pwd}")
-  sh("echo Expanded workspace path: #{File.expand_path(workspace)}")
-
-
     sh("xcodebuild archive \
-      -workspace #{workspace} \
-      -scheme #{framework_name} \
+      -workspace #{WORKSPACE_PATH} \
+      -scheme #{FRAMEWORK_NAME} \
       -destination 'generic/platform=iOS' \
-      -archivePath #{build_dir}/iOS \
+      -archivePath #{BUILD_DIR}/iOS \
       SKIP_INSTALL=NO \
       BUILD_LIBRARY_FOR_DISTRIBUTION=YES")
 
     # ========================
     # 3. ARCHIVE SIMULATOR
     # ========================
-
     sh("xcodebuild archive \
-      -workspace #{workspace} \
-      -scheme #{framework_name} \
+      -workspace #{WORKSPACE_PATH} \
+      -scheme #{FRAMEWORK_NAME} \
       -destination 'generic/platform=iOS Simulator' \
-      -archivePath #{build_dir}/iOS-Simulator \
+      -archivePath #{BUILD_DIR}/iOS-Simulator \
       SKIP_INSTALL=NO \
       BUILD_LIBRARY_FOR_DISTRIBUTION=YES")
 
     # ========================
     # 4. CREATE XCFRAMEWORK
     # ========================
-
     sh("xcodebuild -create-xcframework \
-      -framework #{build_dir}/iOS.xcarchive/Products/Library/Frameworks/#{framework_name}.framework \
-      -framework #{build_dir}/iOS-Simulator.xcarchive/Products/Library/Frameworks/#{framework_name}.framework \
-      -output #{xcframework_source}")
+      -framework #{BUILD_DIR}/iOS.xcarchive/Products/Library/Frameworks/#{FRAMEWORK_NAME}.framework \
+      -framework #{BUILD_DIR}/iOS-Simulator.xcarchive/Products/Library/Frameworks/#{FRAMEWORK_NAME}.framework \
+      -output #{XCFRAMEWORK_SOURCE}")
 
     # ========================
     # 5. COPY TO WRAPPER REPO
     # ========================
-
-    sh("rm -rf #{xcframework_destination}")
-    sh("mkdir -p #{wrapper_binaries_path}")
-    sh("cp -R #{xcframework_source} #{xcframework_destination}")
+    sh("rm -rf #{XCFRAMEWORK_DESTINATION}")
+    sh("mkdir -p #{WRAPPER_BINARIES_PATH}")
+    sh("cp -R #{XCFRAMEWORK_SOURCE} #{XCFRAMEWORK_DESTINATION}")
 
     # ========================
     # 6. GIT COMMIT & PUSH
     # ========================
-
-Dir.chdir(wrapper_repo_path) do
-  timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S")
-  sh("git add .")
-  sh("git commit -m 'Update #{framework_name}.xcframework (#{timestamp})'")
-  sh("git push")
-end
+    Dir.chdir(WRAPPER_REPO_PATH) do
+      timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+      sh("git add #{WRAPPER_BINARIES_PATH}/#{FRAMEWORK_NAME}.xcframework")
+      sh("git commit -m 'Update #{FRAMEWORK_NAME}.xcframework (#{timestamp})' || echo 'No changes to commit'")
+      sh("git push origin main")
+    end
 
   end
 

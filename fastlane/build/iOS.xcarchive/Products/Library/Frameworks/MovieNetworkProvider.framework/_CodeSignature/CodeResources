@@ -10,11 +10,11 @@
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WJqcZIB+F3CR3xa3Ot10HeEHoB0=
+		z1dYomAgOI0B+6e4gXev8W24gYQ=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ju5MHzndb4kXgz7aS1/2UOl/PGA=
+		NGbPlpmEWG28rnh57FTPfBYGbek=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ju5MHzndb4kXgz7aS1/2UOl/PGA=
+		NGbPlpmEWG28rnh57FTPfBYGbek=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		HpgpBfj4Jsy/Yq9a33xi6aIkjJE=
+		IwinQwRWCF+o2V/NPZbtEacVswI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,14 +35,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nuPUytvr6k378UwQMJ9WlkLQuIuIvhB/JgVMT9ipIog=
+			Tlii4bmXKnR9NejNV1pjwP/1oWilMp6qMstM04TrWss=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SqB58MBXwYtg2W+kb32a4F17QmDMx8l3eRa29HWS0AE=
+			HcpZtPdF7Eowrz61mHCHB5XyAoLg4DDmw92t/iMzOQM=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -56,14 +56,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SqB58MBXwYtg2W+kb32a4F17QmDMx8l3eRa29HWS0AE=
+			HcpZtPdF7Eowrz61mHCHB5XyAoLg4DDmw92t/iMzOQM=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e5LvgMrkRuHEa1bwMLPR2fzLJYZp1dByhx9wz4S79jA=
+			0Mt6NR6AaSwfDP0EifGRnoyrH8yupQppkmKMxEVvEpQ=
 			</data>
 		</dict>
 	</dict>

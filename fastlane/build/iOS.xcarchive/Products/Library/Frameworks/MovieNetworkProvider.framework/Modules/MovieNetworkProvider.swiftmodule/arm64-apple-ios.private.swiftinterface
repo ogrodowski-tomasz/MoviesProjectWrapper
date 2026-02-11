@@ -7,20 +7,48 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public protocol AppEndpoint {
+  var path: Swift.String { get }
+  var method: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var queryItems: [Foundation.URLQueryItem]? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var stubDataFilename: Swift.String? { get }
+  #endif
+}
 public protocol MovieNetworkManagerProtocol {
   #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  nonisolated(nonsending) func fetchMovies(language: Swift.String, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  nonisolated(nonsending) func fetchTopRated(language: MovieNetworkProvider.SupportedLanguage, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) func fetchPopular(language: MovieNetworkProvider.SupportedLanguage, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) func fetchTrending(type: MovieNetworkProvider.TrendingType, language: MovieNetworkProvider.SupportedLanguage, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
   #endif
 }
 extension MovieNetworkProvider.MovieNetworkManagerProtocol {
   #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  nonisolated(nonsending) public func fetchMovies(language: Swift.String = "en-US", page: Swift.Int = 1) async throws -> MovieNetworkProvider.MovieResponseModel
+  nonisolated(nonsending) public func fetchTopRated(language: MovieNetworkProvider.SupportedLanguage = .english, page: Swift.Int = 1) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func fetchPopular(language: MovieNetworkProvider.SupportedLanguage = .english, page: Swift.Int = 1) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func fetchTrending(type: MovieNetworkProvider.TrendingType, language: MovieNetworkProvider.SupportedLanguage = .english, page: Swift.Int = 1) async throws -> MovieNetworkProvider.MovieResponseModel
   #endif
 }
 final public class MovieNetworkManager : MovieNetworkProvider.MovieNetworkManagerProtocol {
   public init(networkService: MovieNetworkProvider.NetworkService)
   #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
-  final nonisolated(nonsending) public func fetchMovies(language: Swift.String, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  final nonisolated(nonsending) public func fetchTopRated(language: MovieNetworkProvider.SupportedLanguage, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  final nonisolated(nonsending) public func fetchPopular(language: MovieNetworkProvider.SupportedLanguage, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  final nonisolated(nonsending) public func fetchTrending(type: MovieNetworkProvider.TrendingType, language: MovieNetworkProvider.SupportedLanguage, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
   #endif
   @objc deinit
 }
@@ -51,13 +79,21 @@ public struct MovieModel : Swift.Codable, Swift.Identifiable, Swift.Hashable, Sw
   }
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum APIError : Swift.Error {
-  case invalidResponse
-  public static func == (a: MovieNetworkProvider.APIError, b: MovieNetworkProvider.APIError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+public enum TrendingType : Swift.String {
+  case day
+  case week
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
+}
+public enum APIError : Swift.Error {
+  case invalidResponse(underlyingResponse: Foundation.URLResponse)
+  case invalidURL(endpoint: any MovieNetworkProvider.AppEndpoint)
+  case invalidStatusCode(httpStatusCode: Swift.Int)
 }
 final public class NetworkService {
   public init(apiKey: Swift.String)
@@ -67,5 +103,22 @@ public enum MovieNetworkProviderFactory {
   public static func makeLive(apiKey: Swift.String) -> any MovieNetworkProvider.MovieNetworkManagerProtocol
 }
 public let firstValue: Swift.String
-extension MovieNetworkProvider.APIError : Swift.Equatable {}
-extension MovieNetworkProvider.APIError : Swift.Hashable {}
+public enum SupportedLanguage {
+  case english
+  case polish
+  case spanish
+  case italian
+  public var code: Swift.String {
+    get
+  }
+  public static func == (a: MovieNetworkProvider.SupportedLanguage, b: MovieNetworkProvider.SupportedLanguage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension MovieNetworkProvider.TrendingType : Swift.Equatable {}
+extension MovieNetworkProvider.TrendingType : Swift.Hashable {}
+extension MovieNetworkProvider.TrendingType : Swift.RawRepresentable {}
+extension MovieNetworkProvider.SupportedLanguage : Swift.Equatable {}
+extension MovieNetworkProvider.SupportedLanguage : Swift.Hashable {}

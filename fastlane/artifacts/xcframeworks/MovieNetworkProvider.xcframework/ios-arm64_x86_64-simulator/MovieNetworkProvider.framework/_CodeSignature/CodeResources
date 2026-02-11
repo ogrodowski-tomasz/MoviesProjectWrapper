@@ -10,11 +10,11 @@
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WJqcZIB+F3CR3xa3Ot10HeEHoB0=
+		z1dYomAgOI0B+6e4gXev8W24gYQ=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iGgT+290ztCAJgk3SWMQLvoneyQ=
+		d4hXBuq0F7uIERk1cXJ2HmdbTfo=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iGgT+290ztCAJgk3SWMQLvoneyQ=
+		d4hXBuq0F7uIERk1cXJ2HmdbTfo=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kaZFcejdN6HoPr2IaZ/QS8Cgzyc=
+		UTSsYLtQmo1SDTfnZaguq64SwYI=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WJqcZIB+F3CR3xa3Ot10HeEHoB0=
+		z1dYomAgOI0B+6e4gXev8W24gYQ=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3prnydRBiAhuliryoCCPqXWn0gk=
+		1Q8BYv5G9Nagm3/v81aTizoUXwg=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3prnydRBiAhuliryoCCPqXWn0gk=
+		1Q8BYv5G9Nagm3/v81aTizoUXwg=
 		</data>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9YzrvuKYjSpYAh5KfvkML7V1wQo=
+		dVk9D3eUObCywH2YeTdJX3W6CMA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nuPUytvr6k378UwQMJ9WlkLQuIuIvhB/JgVMT9ipIog=
+			Tlii4bmXKnR9NejNV1pjwP/1oWilMp6qMstM04TrWss=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W7ZxY2/QuDCdSLUmwg49eF6KMaaOD6OU+yYNDlK011U=
+			sp2l9JmZhqY7WVKiBzOyyFZsla5UJF89v7zV3DGzIcE=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W7ZxY2/QuDCdSLUmwg49eF6KMaaOD6OU+yYNDlK011U=
+			sp2l9JmZhqY7WVKiBzOyyFZsla5UJF89v7zV3DGzIcE=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sRgak8N3hhPVDIU36yeN1gIlfUgF9qw6BTCnlYkRxv4=
+			nROxqumCrO2Hs127eZfg5RQfWhhhL7/Q1DpeIay7ft4=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nuPUytvr6k378UwQMJ9WlkLQuIuIvhB/JgVMT9ipIog=
+			Tlii4bmXKnR9NejNV1pjwP/1oWilMp6qMstM04TrWss=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mPm8O3z8AFEA/BKPeJtoazhzsFBWUBx1a2+FDPJeH+U=
+			vBMe7sZ5lYObo/ljh8xcHb7RaptlgaeL+D0v4pVK/2A=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mPm8O3z8AFEA/BKPeJtoazhzsFBWUBx1a2+FDPJeH+U=
+			vBMe7sZ5lYObo/ljh8xcHb7RaptlgaeL+D0v4pVK/2A=
 			</data>
 		</dict>
 		<key>Modules/MovieNetworkProvider.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oOrP+sWbWqKqZFrYbpb0bwxLHU6oGlwo+9SKUmCTLQ0=
+			fvlsYDtcRbFZrePR5GTzD+A08UHGDVbr+ZFVKePQ48g=
 			</data>
 		</dict>
 	</dict>

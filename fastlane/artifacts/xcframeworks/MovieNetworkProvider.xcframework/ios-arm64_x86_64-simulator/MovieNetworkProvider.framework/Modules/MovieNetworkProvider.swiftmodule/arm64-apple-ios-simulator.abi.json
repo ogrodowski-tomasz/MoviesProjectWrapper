@@ -12,6 +12,252 @@
         "moduleName": "MovieNetworkProvider"
       },
       {
+        "kind": "TypeDecl",
+        "name": "AppEndpoint",
+        "printedName": "AppEndpoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20MovieNetworkProvider11AppEndpointP4pathSSvp",
+            "mangledName": "$s20MovieNetworkProvider11AppEndpointP4pathSSvp",
+            "moduleName": "MovieNetworkProvider",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MovieNetworkProvider11AppEndpointP4pathSSvg",
+                "mangledName": "$s20MovieNetworkProvider11AppEndpointP4pathSSvg",
+                "moduleName": "MovieNetworkProvider",
+                "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.AppEndpoint>",
+                "sugared_genericSig": "<Self where Self : MovieNetworkProvider.AppEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20MovieNetworkProvider11AppEndpointP6methodSSvp",
+            "mangledName": "$s20MovieNetworkProvider11AppEndpointP6methodSSvp",
+            "moduleName": "MovieNetworkProvider",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MovieNetworkProvider11AppEndpointP6methodSSvg",
+                "mangledName": "$s20MovieNetworkProvider11AppEndpointP6methodSSvg",
+                "moduleName": "MovieNetworkProvider",
+                "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.AppEndpoint>",
+                "sugared_genericSig": "<Self where Self : MovieNetworkProvider.AppEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "queryItems",
+            "printedName": "queryItems",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URLQueryItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLQueryItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLQueryItem",
+                        "printedName": "Foundation.URLQueryItem",
+                        "usr": "s:10Foundation12URLQueryItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20MovieNetworkProvider11AppEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "mangledName": "$s20MovieNetworkProvider11AppEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "moduleName": "MovieNetworkProvider",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Foundation.URLQueryItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLQueryItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLQueryItem",
+                            "printedName": "Foundation.URLQueryItem",
+                            "usr": "s:10Foundation12URLQueryItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MovieNetworkProvider11AppEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "mangledName": "$s20MovieNetworkProvider11AppEndpointP10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "moduleName": "MovieNetworkProvider",
+                "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.AppEndpoint>",
+                "sugared_genericSig": "<Self where Self : MovieNetworkProvider.AppEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stubDataFilename",
+            "printedName": "stubDataFilename",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20MovieNetworkProvider11AppEndpointP16stubDataFilenameSSSgvp",
+            "mangledName": "$s20MovieNetworkProvider11AppEndpointP16stubDataFilenameSSSgvp",
+            "moduleName": "MovieNetworkProvider",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MovieNetworkProvider11AppEndpointP16stubDataFilenameSSSgvg",
+                "mangledName": "$s20MovieNetworkProvider11AppEndpointP16stubDataFilenameSSSgvg",
+                "moduleName": "MovieNetworkProvider",
+                "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.AppEndpoint>",
+                "sugared_genericSig": "<Self where Self : MovieNetworkProvider.AppEndpoint>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20MovieNetworkProvider11AppEndpointP",
+        "mangledName": "$s20MovieNetworkProvider11AppEndpointP",
+        "moduleName": "MovieNetworkProvider",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -25,8 +271,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "fetchMovies",
-            "printedName": "fetchMovies(language:page:)",
+            "name": "fetchTopRated",
+            "printedName": "fetchTopRated(language:page:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -36,9 +282,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
               },
               {
                 "kind": "TypeNominal",
@@ -48,8 +294,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolP11fetchMovies8language4pageAA0A13ResponseModelVSS_SitYaKF",
-            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolP11fetchMovies8language4pageAA0A13ResponseModelVSS_SitYaKF",
+            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolP13fetchTopRated8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolP13fetchTopRated8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
             "moduleName": "MovieNetworkProvider",
             "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.MovieNetworkManagerProtocol>",
             "sugared_genericSig": "<Self where Self : MovieNetworkProvider.MovieNetworkManagerProtocol>",
@@ -63,8 +309,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchMovies",
-            "printedName": "fetchMovies(language:page:)",
+            "name": "fetchPopular",
+            "printedName": "fetchPopular(language:page:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -74,10 +320,92 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolP12fetchPopular8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolP12fetchPopular8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "moduleName": "MovieNetworkProvider",
+            "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchTrending",
+            "printedName": "fetchTrending(type:language:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponseModel",
+                "printedName": "MovieNetworkProvider.MovieResponseModel",
+                "usr": "s:20MovieNetworkProvider0A13ResponseModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingType",
+                "printedName": "MovieNetworkProvider.TrendingType",
+                "usr": "s:20MovieNetworkProvider12TrendingTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolP13fetchTrending4type8language4pageAA0A13ResponseModelVAA0G4TypeO_AA17SupportedLanguageOSitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolP13fetchTrending4type8language4pageAA0A13ResponseModelVAA0G4TypeO_AA17SupportedLanguageOSitYaKF",
+            "moduleName": "MovieNetworkProvider",
+            "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchTopRated",
+            "printedName": "fetchTopRated(language:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponseModel",
+                "printedName": "MovieNetworkProvider.MovieResponseModel",
+                "usr": "s:20MovieNetworkProvider0A13ResponseModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
                 "hasDefaultArg": true,
-                "usr": "s:SS"
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
               },
               {
                 "kind": "TypeNominal",
@@ -88,8 +416,92 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolPAAE11fetchMovies8language4pageAA0A13ResponseModelVSS_SitYaKF",
-            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolPAAE11fetchMovies8language4pageAA0A13ResponseModelVSS_SitYaKF",
+            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolPAAE13fetchTopRated8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolPAAE13fetchTopRated8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "moduleName": "MovieNetworkProvider",
+            "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchPopular",
+            "printedName": "fetchPopular(language:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponseModel",
+                "printedName": "MovieNetworkProvider.MovieResponseModel",
+                "usr": "s:20MovieNetworkProvider0A13ResponseModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "hasDefaultArg": true,
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolPAAE12fetchPopular8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolPAAE12fetchPopular8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "moduleName": "MovieNetworkProvider",
+            "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "sugared_genericSig": "<Self where Self : MovieNetworkProvider.MovieNetworkManagerProtocol>",
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchTrending",
+            "printedName": "fetchTrending(type:language:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponseModel",
+                "printedName": "MovieNetworkProvider.MovieResponseModel",
+                "usr": "s:20MovieNetworkProvider0A13ResponseModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingType",
+                "printedName": "MovieNetworkProvider.TrendingType",
+                "usr": "s:20MovieNetworkProvider12TrendingTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "hasDefaultArg": true,
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider0aB15ManagerProtocolPAAE13fetchTrending4type8language4pageAA0A13ResponseModelVAA0G4TypeO_AA17SupportedLanguageOSitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB15ManagerProtocolPAAE13fetchTrending4type8language4pageAA0A13ResponseModelVAA0G4TypeO_AA17SupportedLanguageOSitYaKF",
             "moduleName": "MovieNetworkProvider",
             "genericSig": "<τ_0_0 where τ_0_0 : MovieNetworkProvider.MovieNetworkManagerProtocol>",
             "sugared_genericSig": "<Self where Self : MovieNetworkProvider.MovieNetworkManagerProtocol>",
@@ -159,8 +571,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchMovies",
-            "printedName": "fetchMovies(language:page:)",
+            "name": "fetchTopRated",
+            "printedName": "fetchTopRated(language:page:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -170,9 +582,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
               },
               {
                 "kind": "TypeNominal",
@@ -182,8 +594,86 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20MovieNetworkProvider0aB7ManagerC11fetchMovies8language4pageAA0A13ResponseModelVSS_SitYaKF",
-            "mangledName": "$s20MovieNetworkProvider0aB7ManagerC11fetchMovies8language4pageAA0A13ResponseModelVSS_SitYaKF",
+            "usr": "s:20MovieNetworkProvider0aB7ManagerC13fetchTopRated8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB7ManagerC13fetchTopRated8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "moduleName": "MovieNetworkProvider",
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchPopular",
+            "printedName": "fetchPopular(language:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponseModel",
+                "printedName": "MovieNetworkProvider.MovieResponseModel",
+                "usr": "s:20MovieNetworkProvider0A13ResponseModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider0aB7ManagerC12fetchPopular8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB7ManagerC12fetchPopular8language4pageAA0A13ResponseModelVAA17SupportedLanguageO_SitYaKF",
+            "moduleName": "MovieNetworkProvider",
+            "declAttributes": [
+              "Nonisolated",
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchTrending",
+            "printedName": "fetchTrending(type:language:page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponseModel",
+                "printedName": "MovieNetworkProvider.MovieResponseModel",
+                "usr": "s:20MovieNetworkProvider0A13ResponseModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrendingType",
+                "printedName": "MovieNetworkProvider.TrendingType",
+                "usr": "s:20MovieNetworkProvider12TrendingTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider0aB7ManagerC13fetchTrending4type8language4pageAA0A13ResponseModelVAA0F4TypeO_AA17SupportedLanguageOSitYaKF",
+            "mangledName": "$s20MovieNetworkProvider0aB7ManagerC13fetchTrending4type8language4pageAA0A13ResponseModelVAA0F4TypeO_AA17SupportedLanguageOSitYaKF",
             "moduleName": "MovieNetworkProvider",
             "declAttributes": [
               "Nonisolated",
@@ -1387,50 +1877,36 @@
         "moduleName": "MovieNetworkProvider"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MovieNetworkProvider"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MovieNetworkProvider"
-      },
-      {
         "kind": "TypeDecl",
-        "name": "APIError",
-        "printedName": "APIError",
+        "name": "TrendingType",
+        "printedName": "TrendingType",
         "children": [
           {
             "kind": "Var",
-            "name": "invalidResponse",
-            "printedName": "invalidResponse",
+            "name": "day",
+            "printedName": "day",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(MovieNetworkProvider.APIError.Type) -> MovieNetworkProvider.APIError",
+                "printedName": "(MovieNetworkProvider.TrendingType.Type) -> MovieNetworkProvider.TrendingType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "APIError",
-                    "printedName": "MovieNetworkProvider.APIError",
-                    "usr": "s:20MovieNetworkProvider8APIErrorO"
+                    "name": "TrendingType",
+                    "printedName": "MovieNetworkProvider.TrendingType",
+                    "usr": "s:20MovieNetworkProvider12TrendingTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "MovieNetworkProvider.APIError.Type",
+                    "printedName": "MovieNetworkProvider.TrendingType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "APIError",
-                        "printedName": "MovieNetworkProvider.APIError",
-                        "usr": "s:20MovieNetworkProvider8APIErrorO"
+                        "name": "TrendingType",
+                        "printedName": "MovieNetworkProvider.TrendingType",
+                        "usr": "s:20MovieNetworkProvider12TrendingTypeO"
                       }
                     ]
                   }
@@ -1438,57 +1914,95 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20MovieNetworkProvider8APIErrorO15invalidResponseyA2CmF",
-            "mangledName": "$s20MovieNetworkProvider8APIErrorO15invalidResponseyA2CmF",
+            "usr": "s:20MovieNetworkProvider12TrendingTypeO3dayyA2CmF",
+            "mangledName": "$s20MovieNetworkProvider12TrendingTypeO3dayyA2CmF",
             "moduleName": "MovieNetworkProvider"
           },
           {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
+            "kind": "Var",
+            "name": "week",
+            "printedName": "week",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.TrendingType.Type) -> MovieNetworkProvider.TrendingType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrendingType",
+                    "printedName": "MovieNetworkProvider.TrendingType",
+                    "usr": "s:20MovieNetworkProvider12TrendingTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.TrendingType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TrendingType",
+                        "printedName": "MovieNetworkProvider.TrendingType",
+                        "usr": "s:20MovieNetworkProvider12TrendingTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider12TrendingTypeO4weekyA2CmF",
+            "mangledName": "$s20MovieNetworkProvider12TrendingTypeO4weekyA2CmF",
+            "moduleName": "MovieNetworkProvider"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Optional",
+                "printedName": "MovieNetworkProvider.TrendingType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TrendingType",
+                    "printedName": "MovieNetworkProvider.TrendingType",
+                    "usr": "s:20MovieNetworkProvider12TrendingTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "APIError",
-                "printedName": "MovieNetworkProvider.APIError",
-                "usr": "s:20MovieNetworkProvider8APIErrorO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "APIError",
-                "printedName": "MovieNetworkProvider.APIError",
-                "usr": "s:20MovieNetworkProvider8APIErrorO"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:20MovieNetworkProvider8APIErrorO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s20MovieNetworkProvider8APIErrorO2eeoiySbAC_ACtFZ",
+            "declKind": "Constructor",
+            "usr": "s:20MovieNetworkProvider12TrendingTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s20MovieNetworkProvider12TrendingTypeO8rawValueACSgSS_tcfc",
             "moduleName": "MovieNetworkProvider",
-            "static": true,
             "implicit": true,
-            "funcSelfKind": "NonMutating"
+            "init_kind": "Designated"
           },
           {
             "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
+            "name": "rawValue",
+            "printedName": "rawValue",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20MovieNetworkProvider8APIErrorO9hashValueSivp",
-            "mangledName": "$s20MovieNetworkProvider8APIErrorO9hashValueSivp",
+            "usr": "s:20MovieNetworkProvider12TrendingTypeO8rawValueSSvp",
+            "mangledName": "$s20MovieNetworkProvider12TrendingTypeO8rawValueSSvp",
             "moduleName": "MovieNetworkProvider",
             "implicit": true,
             "accessors": [
@@ -1499,53 +2013,29 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20MovieNetworkProvider8APIErrorO9hashValueSivg",
-                "mangledName": "$s20MovieNetworkProvider8APIErrorO9hashValueSivg",
+                "usr": "s:20MovieNetworkProvider12TrendingTypeO8rawValueSSvg",
+                "mangledName": "$s20MovieNetworkProvider12TrendingTypeO8rawValueSSvg",
                 "moduleName": "MovieNetworkProvider",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20MovieNetworkProvider8APIErrorO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s20MovieNetworkProvider8APIErrorO4hash4intoys6HasherVz_tF",
-            "moduleName": "MovieNetworkProvider",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Enum",
-        "usr": "s:20MovieNetworkProvider8APIErrorO",
-        "mangledName": "$s20MovieNetworkProvider8APIErrorO",
+        "usr": "s:20MovieNetworkProvider12TrendingTypeO",
+        "mangledName": "$s20MovieNetworkProvider12TrendingTypeO",
         "moduleName": "MovieNetworkProvider",
         "declAttributes": [
           "AccessControl"
         ],
+        "enumRawTypeName": "String",
         "conformances": [
           {
             "kind": "Conformance",
@@ -1574,6 +2064,250 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieNetworkProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieNetworkProvider"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieNetworkProvider"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIError",
+        "printedName": "APIError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.APIError.Type) -> (Foundation.URLResponse) -> MovieNetworkProvider.APIError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.URLResponse) -> MovieNetworkProvider.APIError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "MovieNetworkProvider.APIError",
+                        "usr": "s:20MovieNetworkProvider8APIErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(underlyingResponse: Foundation.URLResponse)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.APIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "MovieNetworkProvider.APIError",
+                        "usr": "s:20MovieNetworkProvider8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider8APIErrorO15invalidResponseyACSo13NSURLResponseC_tcACmF",
+            "mangledName": "$s20MovieNetworkProvider8APIErrorO15invalidResponseyACSo13NSURLResponseC_tcACmF",
+            "moduleName": "MovieNetworkProvider"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidURL",
+            "printedName": "invalidURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.APIError.Type) -> (any MovieNetworkProvider.AppEndpoint) -> MovieNetworkProvider.APIError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any MovieNetworkProvider.AppEndpoint) -> MovieNetworkProvider.APIError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "MovieNetworkProvider.APIError",
+                        "usr": "s:20MovieNetworkProvider8APIErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(endpoint: any MovieNetworkProvider.AppEndpoint)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AppEndpoint",
+                            "printedName": "any MovieNetworkProvider.AppEndpoint",
+                            "usr": "s:20MovieNetworkProvider11AppEndpointP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.APIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "MovieNetworkProvider.APIError",
+                        "usr": "s:20MovieNetworkProvider8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider8APIErrorO10invalidURLyAcA11AppEndpoint_p_tcACmF",
+            "mangledName": "$s20MovieNetworkProvider8APIErrorO10invalidURLyAcA11AppEndpoint_p_tcACmF",
+            "moduleName": "MovieNetworkProvider"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidStatusCode",
+            "printedName": "invalidStatusCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.APIError.Type) -> (Swift.Int) -> MovieNetworkProvider.APIError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> MovieNetworkProvider.APIError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "MovieNetworkProvider.APIError",
+                        "usr": "s:20MovieNetworkProvider8APIErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(httpStatusCode: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.APIError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "APIError",
+                        "printedName": "MovieNetworkProvider.APIError",
+                        "usr": "s:20MovieNetworkProvider8APIErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider8APIErrorO17invalidStatusCodeyACSi_tcACmF",
+            "mangledName": "$s20MovieNetworkProvider8APIErrorO17invalidStatusCodeyACSi_tcACmF",
+            "moduleName": "MovieNetworkProvider"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20MovieNetworkProvider8APIErrorO",
+        "mangledName": "$s20MovieNetworkProvider8APIErrorO",
+        "moduleName": "MovieNetworkProvider",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1781,6 +2515,341 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieNetworkProvider"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SupportedLanguage",
+        "printedName": "SupportedLanguage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "english",
+            "printedName": "english",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.SupportedLanguage.Type) -> MovieNetworkProvider.SupportedLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SupportedLanguage",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage",
+                    "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SupportedLanguage",
+                        "printedName": "MovieNetworkProvider.SupportedLanguage",
+                        "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO7englishyA2CmF",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO7englishyA2CmF",
+            "moduleName": "MovieNetworkProvider"
+          },
+          {
+            "kind": "Var",
+            "name": "polish",
+            "printedName": "polish",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.SupportedLanguage.Type) -> MovieNetworkProvider.SupportedLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SupportedLanguage",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage",
+                    "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SupportedLanguage",
+                        "printedName": "MovieNetworkProvider.SupportedLanguage",
+                        "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO6polishyA2CmF",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO6polishyA2CmF",
+            "moduleName": "MovieNetworkProvider"
+          },
+          {
+            "kind": "Var",
+            "name": "spanish",
+            "printedName": "spanish",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.SupportedLanguage.Type) -> MovieNetworkProvider.SupportedLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SupportedLanguage",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage",
+                    "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SupportedLanguage",
+                        "printedName": "MovieNetworkProvider.SupportedLanguage",
+                        "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO7spanishyA2CmF",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO7spanishyA2CmF",
+            "moduleName": "MovieNetworkProvider"
+          },
+          {
+            "kind": "Var",
+            "name": "italian",
+            "printedName": "italian",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieNetworkProvider.SupportedLanguage.Type) -> MovieNetworkProvider.SupportedLanguage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SupportedLanguage",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage",
+                    "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieNetworkProvider.SupportedLanguage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SupportedLanguage",
+                        "printedName": "MovieNetworkProvider.SupportedLanguage",
+                        "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO7italianyA2CmF",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO7italianyA2CmF",
+            "moduleName": "MovieNetworkProvider"
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO4codeSSvp",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO4codeSSvp",
+            "moduleName": "MovieNetworkProvider",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO4codeSSvg",
+                "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO4codeSSvg",
+                "moduleName": "MovieNetworkProvider",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedLanguage",
+                "printedName": "MovieNetworkProvider.SupportedLanguage",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO2eeoiySbAC_ACtFZ",
+            "moduleName": "MovieNetworkProvider",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO9hashValueSivp",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO9hashValueSivp",
+            "moduleName": "MovieNetworkProvider",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MovieNetworkProvider17SupportedLanguageO9hashValueSivg",
+                "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO9hashValueSivg",
+                "moduleName": "MovieNetworkProvider",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20MovieNetworkProvider17SupportedLanguageO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO4hash4intoys6HasherVz_tF",
+            "moduleName": "MovieNetworkProvider",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:20MovieNetworkProvider17SupportedLanguageO",
+        "mangledName": "$s20MovieNetworkProvider17SupportedLanguageO",
+        "moduleName": "MovieNetworkProvider",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "URLSession",
         "printedName": "URLSession",
@@ -1890,15 +2959,22 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Managers\/MovieNetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 240,
-      "length": 7,
-      "value": "\"en-US\""
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Managers\/MovieNetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 261,
+      "offset": 688,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tomaszogrodowski\/Documents\/MoviesProjectWrapper\/MovieWorkspace\/MovieNetworkProvider\/MovieNetworkProvider\/Sources\/Managers\/MovieNetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 892,
       "length": 1,
       "value": "1"
     },
