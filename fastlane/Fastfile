@@ -41,7 +41,14 @@ platform :ios do
 coverage_json["targets"].each do |t|
   puts "  #{t['name']}: #{(t['lineCoverage'] * 100).round(2)}%"
 end
-puts "Average Code Coverage: #{(average_coverage * 100).round(2)}%"  end
+puts "Average Code Coverage: #{(average_coverage * 100).round(2)}%"  
+
+      timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+      sh("git add .")
+      sh("git commit -m 'Tests succeeded with coverage (#{average_coverage}) at (#{timestamp})' || echo 'No changes to commit'")
+      sh("git push origin main")
+
+end
 
   desc "Build SDK, copy to wrapper repo, commit and push"
   lane :release_sdk do

@@ -5,22 +5,22 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000217">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000203">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: rm -rf build/Tests.xcresult" time="0.0098">
+      <testcase classname="fastlane.lanes" name="1: rm -rf build/Tests.xcresult" time="0.008374">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: mkdir -p build" time="0.003897">
+      <testcase classname="fastlane.lanes" name="2: mkdir -p build" time="0.003682">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: xcodebuild test       -workspace /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProviderTests       -destination &apos;platform=iOS Simulator,name=iPhone 17&apos;       -enableCodeCoverage YES       -resultBundlePath build/Tests.xcresult" time="16.415815">
+      <testcase classname="fastlane.lanes" name="3: xcodebuild test       -workspace /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProviderTests       -destination &apos;platform=iOS Simulator,name=iPhone 17&apos;       -enableCodeCoverage YES       -resultBundlePath build/Tests.xcresult" time="16.175796">
         
       </testcase>
     
