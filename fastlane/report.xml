@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000204">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: rm -rf build" time="0.011423">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: rm -rf artifacts/xcframeworks/MovieNetworkProvider.xcframework" time="0.006723">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: mkdir -p artifacts/xcframeworks" time="0.003299">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: echo Fastlane cwd: /Users/tomaszogrodowski/Desktop/xcode/MOVIES/fastlane" time="0.009653">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: echo Expanded workspace path: /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieWorkspace/MovieWorkspace.xcworkspace" time="0.003575">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: xcodebuild archive       -workspace /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProvider       -destination &apos;generic/platform=iOS&apos;       -archivePath build/iOS       SKIP_INSTALL=NO       BUILD_LIBRARY_FOR_DISTRIBUTION=YES" time="2.301923">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: xcodebuild archive       -workspace /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProvider       -destination &apos;generic/platform=iOS Simulator&apos;       -archivePath build/iOS-Simulator       SKIP_INSTALL=NO       BUILD_LIBRARY_FOR_DISTRIBUTION=YES" time="2.295642">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: xcodebuild -create-xcframework       -framework build/iOS.xcarchive/Products/Library/Frameworks/MovieNetworkProvider.framework       -framework build/iOS-Simulator.xcarchive/Products/Library/Frameworks/MovieNetworkProvider.framework       -output artifacts/xcframeworks/MovieNetworkProvider.xcframework" time="0.560594">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: rm -rf /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieNetworkDataProviderSPM/Binaries/MovieNetworkProvider.xcframework" time="0.007643">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: mkdir -p /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieNetworkDataProviderSPM/Binaries" time="0.003388">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: cp -R artifacts/xcframeworks/MovieNetworkProvider.xcframework /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieNetworkDataProviderSPM/Binaries/MovieNetworkProvider.xcframework" time="0.013863">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: git add ." time="0.0198">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: git commit -m &apos;Update MovieNetworkProvider.xcframework (2026-02-11 13:21:28)&apos;" time="0.027299">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: git push" time="1.276762">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

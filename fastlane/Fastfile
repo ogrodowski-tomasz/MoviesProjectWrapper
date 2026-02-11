@@ -1,0 +1,89 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Build SDK, copy to wrapper repo, commit and push"
+  lane :release_sdk do
+
+    framework_name = "MovieNetworkProvider"
+    workspace = File.expand_path("../MovieWorkspace/MovieWorkspace.xcworkspace", __dir__)
+
+
+    build_dir = "build"
+    artifacts_dir = "artifacts/xcframeworks"
+    xcframework_source = "#{artifacts_dir}/#{framework_name}.xcframework"
+
+    wrapper_repo_path = File.expand_path("../MovieNetworkDataProviderSPM", __dir__)
+    wrapper_binaries_path = "#{wrapper_repo_path}/Binaries"
+    xcframework_destination = "#{wrapper_binaries_path}/#{framework_name}.xcframework"
+
+    # ========================
+    # 1. CLEAN
+    # ========================
+
+    sh("rm -rf #{build_dir}")
+    sh("rm -rf #{xcframework_source}")
+    sh("mkdir -p #{artifacts_dir}")
+
+    # ========================
+    # 2. ARCHIVE DEVICE
+    # ========================
+
+puts "🛠 Fastlane working directory: #{Dir.pwd}"
+  puts "🛠 Using workspace path: #{File.expand_path(workspace)}"
+
+  sh("echo Fastlane cwd: #{Dir.pwd}")
+  sh("echo Expanded workspace path: #{File.expand_path(workspace)}")
+
+
+    sh("xcodebuild archive \
+      -workspace #{workspace} \
+      -scheme #{framework_name} \
+      -destination 'generic/platform=iOS' \
+      -archivePath #{build_dir}/iOS \
+      SKIP_INSTALL=NO \
+      BUILD_LIBRARY_FOR_DISTRIBUTION=YES")
+
+    # ========================
+    # 3. ARCHIVE SIMULATOR
+    # ========================
+
+    sh("xcodebuild archive \
+      -workspace #{workspace} \
+      -scheme #{framework_name} \
+      -destination 'generic/platform=iOS Simulator' \
+      -archivePath #{build_dir}/iOS-Simulator \
+      SKIP_INSTALL=NO \
+      BUILD_LIBRARY_FOR_DISTRIBUTION=YES")
+
+    # ========================
+    # 4. CREATE XCFRAMEWORK
+    # ========================
+
+    sh("xcodebuild -create-xcframework \
+      -framework #{build_dir}/iOS.xcarchive/Products/Library/Frameworks/#{framework_name}.framework \
+      -framework #{build_dir}/iOS-Simulator.xcarchive/Products/Library/Frameworks/#{framework_name}.framework \
+      -output #{xcframework_source}")
+
+    # ========================
+    # 5. COPY TO WRAPPER REPO
+    # ========================
+
+    sh("rm -rf #{xcframework_destination}")
+    sh("mkdir -p #{wrapper_binaries_path}")
+    sh("cp -R #{xcframework_source} #{xcframework_destination}")
+
+    # ========================
+    # 6. GIT COMMIT & PUSH
+    # ========================
+
+Dir.chdir(wrapper_repo_path) do
+  timestamp = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+  sh("git add .")
+  sh("git commit -m 'Update #{framework_name}.xcframework (#{timestamp})'")
+  sh("git push")
+end
+
+  end
+
+end

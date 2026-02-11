@@ -1,0 +1,6 @@
+[submodule "MovieWorkspace"]
+	path = MovieWorkspace
+	url = git@github.com:ogrodowski-tomasz/MovieProjectWorkspace.git
+[submodule "MovieNetworkDataProviderSPM"]
+	path = MovieNetworkDataProviderSPM
+	url = git@github.com:ogrodowski-tomasz/MovieNetworkDataProviderSPM.git
