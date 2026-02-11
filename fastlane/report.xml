@@ -5,77 +5,107 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000204">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000205">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: rm -rf build" time="0.011423">
+      <testcase classname="fastlane.lanes" name="01: rm -rf build" time="0.010418">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: rm -rf artifacts/xcframeworks/MovieNetworkProvider.xcframework" time="0.006723">
+      <testcase classname="fastlane.lanes" name="02: rm -rf artifacts/xcframeworks/MovieNetworkProvider.xcframework" time="0.00592">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: mkdir -p artifacts/xcframeworks" time="0.003299">
+      <testcase classname="fastlane.lanes" name="03: mkdir -p artifacts/xcframeworks" time="0.002988">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: echo Fastlane cwd: /Users/tomaszogrodowski/Desktop/xcode/MOVIES/fastlane" time="0.009653">
+      <testcase classname="fastlane.lanes" name="04: git fetch origin" time="1.714652">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: echo Expanded workspace path: /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieWorkspace/MovieWorkspace.xcworkspace" time="0.003575">
+      <testcase classname="fastlane.lanes" name="05: git checkout main" time="0.030929">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: xcodebuild archive       -workspace /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProvider       -destination &apos;generic/platform=iOS&apos;       -archivePath build/iOS       SKIP_INSTALL=NO       BUILD_LIBRARY_FOR_DISTRIBUTION=YES" time="2.301923">
+      <testcase classname="fastlane.lanes" name="06: git pull origin main" time="1.748296">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: xcodebuild archive       -workspace /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProvider       -destination &apos;generic/platform=iOS Simulator&apos;       -archivePath build/iOS-Simulator       SKIP_INSTALL=NO       BUILD_LIBRARY_FOR_DISTRIBUTION=YES" time="2.295642">
+      <testcase classname="fastlane.lanes" name="07: git fetch origin" time="1.819154">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: xcodebuild -create-xcframework       -framework build/iOS.xcarchive/Products/Library/Frameworks/MovieNetworkProvider.framework       -framework build/iOS-Simulator.xcarchive/Products/Library/Frameworks/MovieNetworkProvider.framework       -output artifacts/xcframeworks/MovieNetworkProvider.xcframework" time="0.560594">
+      <testcase classname="fastlane.lanes" name="08: git checkout main" time="0.032127">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: rm -rf /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieNetworkDataProviderSPM/Binaries/MovieNetworkProvider.xcframework" time="0.007643">
+      <testcase classname="fastlane.lanes" name="09: git pull origin main" time="1.96908">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: mkdir -p /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieNetworkDataProviderSPM/Binaries" time="0.003388">
+      <testcase classname="fastlane.lanes" name="10: echo Fastlane cwd: /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MoviesProjectWrapper/fastlane" time="0.00806">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: cp -R artifacts/xcframeworks/MovieNetworkProvider.xcframework /Users/tomaszogrodowski/Desktop/xcode/MOVIES/MovieNetworkDataProviderSPM/Binaries/MovieNetworkProvider.xcframework" time="0.013863">
+      <testcase classname="fastlane.lanes" name="11: echo Expanded workspace path: /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MoviesProjectWrapper/MovieWorkspace/MovieWorkspace.xcworkspace" time="0.004573">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="12: git add ." time="0.0198">
+      <testcase classname="fastlane.lanes" name="12: xcodebuild archive       -workspace /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MoviesProjectWrapper/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProvider       -destination &apos;generic/platform=iOS&apos;       -archivePath build/iOS       SKIP_INSTALL=NO       BUILD_LIBRARY_FOR_DISTRIBUTION=YES" time="2.227619">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="13: git commit -m &apos;Update MovieNetworkProvider.xcframework (2026-02-11 13:21:28)&apos;" time="0.027299">
+      <testcase classname="fastlane.lanes" name="13: xcodebuild archive       -workspace /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MoviesProjectWrapper/MovieWorkspace/MovieWorkspace.xcworkspace       -scheme MovieNetworkProvider       -destination &apos;generic/platform=iOS Simulator&apos;       -archivePath build/iOS-Simulator       SKIP_INSTALL=NO       BUILD_LIBRARY_FOR_DISTRIBUTION=YES" time="2.020015">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="14: git push" time="1.276762">
+      <testcase classname="fastlane.lanes" name="14: xcodebuild -create-xcframework       -framework build/iOS.xcarchive/Products/Library/Frameworks/MovieNetworkProvider.framework       -framework build/iOS-Simulator.xcarchive/Products/Library/Frameworks/MovieNetworkProvider.framework       -output artifacts/xcframeworks/MovieNetworkProvider.xcframework" time="0.555611">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="15: rm -rf /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MoviesProjectWrapper/MovieNetworkDataProviderSPM/Binaries/MovieNetworkProvider.xcframework" time="0.007023">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="16: mkdir -p /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MoviesProjectWrapper/MovieNetworkDataProviderSPM/Binaries" time="0.00336">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="17: cp -R artifacts/xcframeworks/MovieNetworkProvider.xcframework /Users/tomaszogrodowski/Documents/MoviesProjectWrapper/MoviesProjectWrapper/MovieNetworkDataProviderSPM/Binaries/MovieNetworkProvider.xcframework" time="0.012749">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="18: git add ." time="0.016468">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="19: git commit -m &apos;Update MovieNetworkProvider.xcframework (2026-02-11 14:14:29)&apos;" time="0.026646">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="20: git push" time="2.002503">
         
       </testcase>
     

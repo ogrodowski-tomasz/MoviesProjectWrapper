@@ -25,6 +25,21 @@ platform :ios do
     sh("rm -rf #{xcframework_source}")
     sh("mkdir -p #{artifacts_dir}")
 
+# ========================
+# 1b. CHECKOUT SUBMODULES NA MAIN
+# ========================
+Dir.chdir(File.expand_path("../MovieWorkspace", __dir__)) do
+  sh("git fetch origin")
+  sh("git checkout main")
+  sh("git pull origin main")
+end
+
+Dir.chdir(File.expand_path("../MovieNetworkDataProviderSPM", __dir__)) do
+  sh("git fetch origin")
+  sh("git checkout main")
+  sh("git pull origin main")
+end
+
     # ========================
     # 2. ARCHIVE DEVICE
     # ========================

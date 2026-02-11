@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MovieNetworkProvider
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol MovieNetworkManagerProtocol {
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) func fetchMovies(language: Swift.String, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+}
+extension MovieNetworkProvider.MovieNetworkManagerProtocol {
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  nonisolated(nonsending) public func fetchMovies(language: Swift.String = "en-US", page: Swift.Int = 1) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+}
+final public class MovieNetworkManager : MovieNetworkProvider.MovieNetworkManagerProtocol {
+  public init(networkService: MovieNetworkProvider.NetworkService)
+  #if compiler(>=5.3) && $AsyncExecutionBehaviorAttributes
+  final nonisolated(nonsending) public func fetchMovies(language: Swift.String, page: Swift.Int) async throws -> MovieNetworkProvider.MovieResponseModel
+  #endif
+  @objc deinit
+}
+public struct MovieResponseModel : Swift.Codable {
+  public let page: Swift.Int
+  public let results: [MovieNetworkProvider.MovieModel]
+  public let totalPages: Swift.Int, totalResults: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieModel : Swift.Codable, Swift.Identifiable, Swift.Hashable, Swift.Equatable {
+  public let adult: Swift.Bool
+  public let backdropPath: Swift.String
+  public let genreIDS: [Swift.Int]
+  public let id: Swift.Int
+  public let originalLanguage: Swift.String, originalTitle: Swift.String, overview: Swift.String
+  public let popularity: Swift.Double
+  public let posterPath: Swift.String, releaseDate: Swift.String, title: Swift.String
+  public let video: Swift.Bool
+  public let voteAverage: Swift.Double
+  public let voteCount: Swift.Int
+  public static func == (a: MovieNetworkProvider.MovieModel, b: MovieNetworkProvider.MovieModel) -> Swift.Bool
+  public typealias ID = Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum APIError : Swift.Error {
+  case invalidResponse
+  public static func == (a: MovieNetworkProvider.APIError, b: MovieNetworkProvider.APIError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class NetworkService {
+  public init(apiKey: Swift.String)
+  @objc deinit
+}
+public enum MovieNetworkProviderFactory {
+  public static func makeLive(apiKey: Swift.String) -> any MovieNetworkProvider.MovieNetworkManagerProtocol
+}
+public let firstValue: Swift.String
+extension MovieNetworkProvider.APIError : Swift.Equatable {}
+extension MovieNetworkProvider.APIError : Swift.Hashable {}
